@@ -131,11 +131,137 @@ animation: text_reveal_box 1s ease;
     text-align:center;
 
 }
-#services .serction-title span{
+#services .section-title span{
     color: crimson;
 }
 
+#services .service-top p
+{
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight:300;
+  letter-spacing: .05rem;
+}
+
+#services .service-bottom{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+#services .service-item{
+    flex-basis:80%;
+    display : flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
+    padding:30px;
+    border-radius: 10px;
+    background-image: url('bg-img.jpg');
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    overflow: hidden;
+
+}
+#services .service-item p{
+  text-align: left;
+}
+
+#services .service-item::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;  
+    height:100%;
+    width:100%;
+    background-color: black;
+    opacity: .8;
+    z-index: -1;
+    
+}
+
+#services .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px ;
+}
+
+#services .service-bottom .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#services .service-item h2
+{
+    color: gold;
+}
 /*services-end*/
+
+/*about-section*/
+#about .about{
+    flex-flow: column-reverse;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+  
+}
+#about .about-left
+{ 
+    background-image: url('about-bg.jpg');
+    background-size: cover;
+    margin-top: 20px;
+    height: 500px;
+    width: 300px;  
+    position: relative;  
+    border:10px solid white;
+}
+
+#about .about-left::after
+{   content: '';
+    top: 15px;
+    left: -33px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border:10px solid crimson;
+        
+}
+
+#about .about-right
+{ 
+    margin-top: 30px;    
+}
+#about .about .about-right h1
+{ 
+    font-size:4rem;
+    font-weight: 300;
+    color:black;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align:center;
+}
+
+#about .about .about-right span{
+    color: crimson;
+}
+
+#about .about .about-right p{
+    font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight:300;
+  letter-spacing: .05rem;
+}
+/*about section end*/
 
 /*keyframes*/
 
