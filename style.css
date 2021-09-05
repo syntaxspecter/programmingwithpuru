@@ -288,3 +288,27 @@ animation: text_reveal_box 1s ease;
         color: crimson;
     }
     }
+/*end keyframes*/
+
+
+/*media for tablet*/
+@media only screen and (min-width:768px)
+{
+    .cta{
+        font-size: 2.5 rem;
+        padding: 20px 60px;
+    }
+     .section-title{
+        font-size:6rem;
+    }
+
+    #services .service-bottom{
+        margin-top:30px;
+    }
+   
+    #services .service-item{
+        flex-basis:45%;
+        margin:1.5%;
+
+    }
+}
